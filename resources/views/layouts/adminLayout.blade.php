@@ -42,7 +42,6 @@
 
 <body>
     <div id="page-wrapper">
-
         <div id="page-container" class="sidebar-partial sidebar-visible-lg sidebar-no-animations">
 
             @include("inc.sidebar")
@@ -94,28 +93,17 @@
 
                 <!-- Page content -->
                 <div id="page-content">
-
                     @yield('content')
                 </div>
                 <!-- END Page Content -->
 
-                <!-- Footer -->
-                <footer class="clearfix">
-                    <div class="pull-left">
-                        <span id="year-copy"></span> &copy; <a href="#" target="_blank">Dipudey</a>
-                    </div>
-                </footer>
-                <!-- END Footer -->
+
             </div>
             <!-- END Main Container -->
         </div>
         <!-- END Page Container -->
     </div>
     <!-- END Page Wrapper -->
-
-    <!-- Scroll to top link, initialized in js/app.js - scrollToTop() -->
-    <a href="#" id="to-top"><i class="fa fa-angle-double-up"></i></a>
-
 
     <!-- jQuery, Bootstrap.js, jQuery plugins and Custom JS code -->
     <script src="{{ asset('assets') }}/js/vendor/jquery.min.js"></script>
@@ -127,11 +115,7 @@
 
     <!-- Load and execute javascript code used only in this page -->
     <script src="{{ asset('assets') }}/js/pages/index.js"></script>
-    <script>
-        $(function() {
-            Index.init();
-        });
-    </script>
+
 </body>
 
 </html>

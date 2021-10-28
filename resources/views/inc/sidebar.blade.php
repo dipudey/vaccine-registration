@@ -10,14 +10,14 @@
 
              <ul class="sidebar-nav mt-5">
                  <li>
-                     <a href="{{ route('dashboard') }}" class="active">
+                     <a href="{{ route('dashboard') }}" class="{{ request()->is('dashboard') ? 'active' : '' }}">
                          <i class="gi gi-stopwatch sidebar-nav-icon"></i>
                          <span class="sidebar-nav-mini-hide">Dashboard</span>
                      </a>
                  </li>
 
                  <li>
-                     <a href="{{ route('dashboard') }}" class="">
+                     <a href="{{ route('center.index') }}" class="{{ request()->is('center') ? 'active' : '' }}">
                          <i class="gi gi-stopwatch sidebar-nav-icon"></i>
                          <span class="sidebar-nav-mini-hide">Centers</span>
                      </a>
